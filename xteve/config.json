@@ -1,0 +1,22 @@
+{
+  "name": "Minecraft Server",
+  "version": "1.0",
+  "slug": "minecraft_server",
+  "description": "Startet einen Minecraft-Server.",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "options": {
+    "eula": false,
+    "max_memory": "1G"
+  },
+  "schema": {
+    "eula": "bool",
+    "max_memory": "str"
+  },
+  "ports": {
+    "25565/tcp": 25565
+  },
+  "webui": "http://[HOST]:[PORT:25565]"
+}
+
